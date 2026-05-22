@@ -47,11 +47,11 @@ Panel d'administració: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admi
 
 Documentació generada automàticament amb Pydoc via GitHub Actions:
 
-📄 [Veure documentació](https://lacetaniapolculleres.github.io/<REPO>/)
+📄 [Veure documentació](https://lacetaniapolculleres.github.io/B5_Django_PolCulleres/)
 
 | Mòdul | Descripció |
 |-------|-----------|
-| [blog.models](https://lacetaniapolculleres.github.io/<REPO>/blog.models.html) | Models de la base de dades (Post, Author, Tag) |
-| [blog.views](https://lacetaniapolculleres.github.io/<REPO>/blog.views.html) | Vistes de l'aplicació |
-| [blog.urls](https://lacetaniapolculleres.github.io/<REPO>/blog.urls.html) | Configuració de les URLs |
-| [blog.admin](https://lacetaniapolculleres.github.io/<REPO>/blog.admin.html) | Configuració del panell d'administració |
+| [blog.models](https://lacetaniapolculleres.github.io/B5_Django_PolCulleres/blog.models.html) | Models de la base de dades (Post, Author, Tag) |
+| [blog.views](https://lacetaniapolculleres.github.io/B5_Django_PolCulleres/blog.views.html) | Vistes de l'aplicació |
+| [blog.urls](https://lacetaniapolculleres.github.io/B5_Django_PolCulleres/blog.urls.html) | Configuració de les URLs |
+| [blog.admin](https://lacetaniapolculleres.github.io/B5_Django_PolCulleres/blog.admin.html) | Configuració del panell d'administració |
