@@ -1,0 +1,57 @@
+name: Django CI + Pydoc
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Clona el repositori
+        uses: actions/checkout@v4
+
+      - name: Instal·la Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instal·la les dependències
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Executa les migracions
+        run: python manage.py migrate
+
+      - name: Genera documentació Pydoc
+        run: |
+          mkdir -p docs
+          python -c "
+          import os, sys
+          os.environ['DJANGO_SETTINGS_MODULE'] = 'app.settings'
+          import django
+          django.setup()
+          import pydoc
+          modules = ['blog.models', 'blog.views', 'blog.urls', 'blog.admin']
+          for mod in modules:
+              pydoc.writedoc(mod)
+          "
+          mv blog.models.html docs/
+          mv blog.views.html docs/
+          mv blog.urls.html docs/
+          mv blog.admin.html docs/
+
+      - name: Commit i push dels HTMLs a docs/
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --staged --quiet || git commit -m "docs: actualitza documentació pydoc [skip ci]"
+          git push

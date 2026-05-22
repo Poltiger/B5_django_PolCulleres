@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}Posts{% endblock %}
+
+{% block content %}
+<h3 class="fw-bold mb-4">Llistat de tots els posts</h3>
+<div class="row">
+    {% for post in posts %}
+    <div class="col-md-3 mb-4">
+        {% include 'blog/includes/post_card.html' %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

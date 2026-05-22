@@ -1,0 +1,29 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}Blog M3-UF6-DJANGO{% endblock %}
+
+{% block hero %}
+<div class="hero-image">
+    <img src="{% static 'blog/images/header.jpg' %}" alt="Blog header" class="img-fluid w-100 hero-img">
+</div>
+<div class="text-center py-4 welcome-section">
+    <h2>Benvingut al Blog M3 - UF6</h2>
+    <p class="text-muted">Aquest és el projecte d'aprenentatge M3-UF6 basat en DJango</p>
+</div>
+{% endblock %}
+
+{% block content %}
+<h3 class="fw-bold mb-4">Darrers Posts</h3>
+<div class="row">
+    {% for post in posts %}
+    <div class="col-md-4 mb-4">
+        {% include 'blog/includes/post_card.html' %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="mt-4 text-muted">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere iusto minus quas corporis explicabo laborum? Pariatur labore quidem cum id alias aut, earum ad, quos quae sunt est quas.</p>
+</div>
+{% endblock %}

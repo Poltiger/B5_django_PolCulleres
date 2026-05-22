@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}Posts amb etiqueta {{ tag.caption }}{% endblock %}
+
+{% block content %}
+<h3 class="fw-bold mb-4">
+    Llistat de tots els posts amb l'etiqueta <u>{{ tag.caption }}</u>
+</h3>
+<div class="row">
+    {% for post in posts %}
+    <div class="col-md-3 mb-4">
+        {% include 'blog/includes/post_card.html' %}
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
