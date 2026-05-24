@@ -47,11 +47,11 @@ Panel d'administració: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admi
 
 Documentació generada automàticament amb Pydoc via GitHub Actions:
 
-📄 [Veure documentació](https://Poltiger.github.io/B5_Django_PolCulleres/)
+📄 [Veure documentació](https://poltiger.github.io/B5_django_PolCulleres/)
 
 | Mòdul | Descripció |
 |-------|-----------|
-| [blog.models](https://Poltiger.github.io/B5_Django_PolCulleres/blog.models.html) | Models de la base de dades (Post, Author, Tag) |
-| [blog.views](https://Poltiger.github.io/B5_Django_PolCulleres/blog.views.html) | Vistes de l'aplicació |
-| [blog.urls](https://Poltiger.github.io/B5_Django_PolCulleres/blog.urls.html) | Configuració de les URLs |
-| [blog.admin](https://Poltiger.github.io/B5_Django_PolCulleres/blog.admin.html) | Configuració del panell d'administració |
+| [blog.models](https://poltiger.github.io/B5_django_PolCulleres/blog.models.html) | Models de la base de dades (Post, Author, Tag) |
+| [blog.views](https://poltiger.github.io/B5_django_PolCulleres/blog.views.html) | Vistes de l'aplicació |
+| [blog.urls](https://poltiger.github.io/B5_django_PolCulleres/blog.urls.html) | Configuració de les URLs |
+| [blog.admin](https://poltiger.github.io/B5_django_PolCulleres/blog.admin.html) | Configuració del panell d'administració |
