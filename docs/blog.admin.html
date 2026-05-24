@@ -8,7 +8,7 @@
 <table class="heading">
 <tr class="heading-text decor">
 <td class="title">&nbsp;<br><strong class="title"><a href="blog.html" class="white">blog</a>.admin</strong></td>
-<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cpolti%5Cvideos%5Cprojecte%20django%5Cblog%5Cadmin.py">c:\users\polti\videos\projecte django\blog\admin.py</a></td></tr></table>
+<td class="extra"><a href=".">index</a><br><a href="file:/home/runner/work/B5_django_PolCulleres/B5_django_PolCulleres/blog/admin.py">/home/runner/work/B5_django_PolCulleres/B5_django_PolCulleres/blog/admin.py</a></td></tr></table>
     <p><span class="code">Registre&nbsp;dels&nbsp;models&nbsp;al&nbsp;panell&nbsp;d'administració&nbsp;de&nbsp;Django.</span></p>
 <p>
 <table class="section">
@@ -140,14 +140,7 @@ for&nbsp;each&nbsp;of&nbsp;those&nbsp;actions.</span></dd></dl>
 key&nbsp;is&nbsp;used&nbsp;if&nbsp;no&nbsp;field&nbsp;is&nbsp;provided.&nbsp;Return&nbsp;``None``&nbsp;if&nbsp;no&nbsp;match&nbsp;is<br>
 found&nbsp;or&nbsp;the&nbsp;object_id&nbsp;fails&nbsp;validation.</span></dd></dl>
 
-<dl><dt><a name="AuthorAdmin-get_paginator"><strong>get_paginator</strong></a>(
-    self,
-    request,
-    queryset,
-    per_page,
-    orphans=0,
-    allow_empty_first_page=True
-)</dt></dl>
+<dl><dt><a name="AuthorAdmin-get_paginator"><strong>get_paginator</strong></a>(self, request, queryset, per_page, orphans=0, allow_empty_first_page=True)</dt></dl>
 
 <dl><dt><a name="AuthorAdmin-get_preserved_filters"><strong>get_preserved_filters</strong></a>(self, request)</dt><dd><span class="code">Return&nbsp;the&nbsp;preserved&nbsp;filters&nbsp;querystring.</span></dd></dl>
 
@@ -174,14 +167,7 @@ before&nbsp;the&nbsp;deletion.<br>
 &nbsp;<br>
 The&nbsp;default&nbsp;implementation&nbsp;creates&nbsp;admin&nbsp;LogEntry&nbsp;objects.</span></dd></dl>
 
-<dl><dt><a name="AuthorAdmin-message_user"><strong>message_user</strong></a>(
-    self,
-    request,
-    message,
-    level=20,
-    extra_tags='',
-    fail_silently=False
-)</dt><dd><span class="code">Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;user.&nbsp;The&nbsp;default&nbsp;implementation<br>
+<dl><dt><a name="AuthorAdmin-message_user"><strong>message_user</strong></a>(self, request, message, level=20, extra_tags='', fail_silently=False)</dt><dd><span class="code">Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;user.&nbsp;The&nbsp;default&nbsp;implementation<br>
 posts&nbsp;a&nbsp;message&nbsp;using&nbsp;the&nbsp;django.contrib.messages&nbsp;backend.<br>
 &nbsp;<br>
 Exposes&nbsp;almost&nbsp;the&nbsp;same&nbsp;API&nbsp;as&nbsp;messages.add_message(),&nbsp;but&nbsp;accepts&nbsp;the<br>
@@ -189,15 +175,7 @@ positional&nbsp;arguments&nbsp;in&nbsp;a&nbsp;different&nbsp;order&nbsp;to&nbsp;
 compatibility.&nbsp;For&nbsp;convenience,&nbsp;it&nbsp;accepts&nbsp;the&nbsp;`level`&nbsp;argument&nbsp;as<br>
 a&nbsp;string&nbsp;rather&nbsp;than&nbsp;the&nbsp;usual&nbsp;level&nbsp;number.</span></dd></dl>
 
-<dl><dt><a name="AuthorAdmin-render_change_form"><strong>render_change_form</strong></a>(
-    self,
-    request,
-    context,
-    add=False,
-    change=False,
-    form_url='',
-    obj=None
-)</dt></dl>
+<dl><dt><a name="AuthorAdmin-render_change_form"><strong>render_change_form</strong></a>(self, request, context, add=False, change=False, form_url='', obj=None)</dt></dl>
 
 <dl><dt><a name="AuthorAdmin-render_delete_form"><strong>render_delete_form</strong></a>(self, request, context)</dt></dl>
 
@@ -538,14 +516,7 @@ for&nbsp;each&nbsp;of&nbsp;those&nbsp;actions.</span></dd></dl>
 key&nbsp;is&nbsp;used&nbsp;if&nbsp;no&nbsp;field&nbsp;is&nbsp;provided.&nbsp;Return&nbsp;``None``&nbsp;if&nbsp;no&nbsp;match&nbsp;is<br>
 found&nbsp;or&nbsp;the&nbsp;object_id&nbsp;fails&nbsp;validation.</span></dd></dl>
 
-<dl><dt><a name="PostAdmin-get_paginator"><strong>get_paginator</strong></a>(
-    self,
-    request,
-    queryset,
-    per_page,
-    orphans=0,
-    allow_empty_first_page=True
-)</dt></dl>
+<dl><dt><a name="PostAdmin-get_paginator"><strong>get_paginator</strong></a>(self, request, queryset, per_page, orphans=0, allow_empty_first_page=True)</dt></dl>
 
 <dl><dt><a name="PostAdmin-get_preserved_filters"><strong>get_preserved_filters</strong></a>(self, request)</dt><dd><span class="code">Return&nbsp;the&nbsp;preserved&nbsp;filters&nbsp;querystring.</span></dd></dl>
 
@@ -572,14 +543,7 @@ before&nbsp;the&nbsp;deletion.<br>
 &nbsp;<br>
 The&nbsp;default&nbsp;implementation&nbsp;creates&nbsp;admin&nbsp;LogEntry&nbsp;objects.</span></dd></dl>
 
-<dl><dt><a name="PostAdmin-message_user"><strong>message_user</strong></a>(
-    self,
-    request,
-    message,
-    level=20,
-    extra_tags='',
-    fail_silently=False
-)</dt><dd><span class="code">Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;user.&nbsp;The&nbsp;default&nbsp;implementation<br>
+<dl><dt><a name="PostAdmin-message_user"><strong>message_user</strong></a>(self, request, message, level=20, extra_tags='', fail_silently=False)</dt><dd><span class="code">Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;user.&nbsp;The&nbsp;default&nbsp;implementation<br>
 posts&nbsp;a&nbsp;message&nbsp;using&nbsp;the&nbsp;django.contrib.messages&nbsp;backend.<br>
 &nbsp;<br>
 Exposes&nbsp;almost&nbsp;the&nbsp;same&nbsp;API&nbsp;as&nbsp;messages.add_message(),&nbsp;but&nbsp;accepts&nbsp;the<br>
@@ -587,15 +551,7 @@ positional&nbsp;arguments&nbsp;in&nbsp;a&nbsp;different&nbsp;order&nbsp;to&nbsp;
 compatibility.&nbsp;For&nbsp;convenience,&nbsp;it&nbsp;accepts&nbsp;the&nbsp;`level`&nbsp;argument&nbsp;as<br>
 a&nbsp;string&nbsp;rather&nbsp;than&nbsp;the&nbsp;usual&nbsp;level&nbsp;number.</span></dd></dl>
 
-<dl><dt><a name="PostAdmin-render_change_form"><strong>render_change_form</strong></a>(
-    self,
-    request,
-    context,
-    add=False,
-    change=False,
-    form_url='',
-    obj=None
-)</dt></dl>
+<dl><dt><a name="PostAdmin-render_change_form"><strong>render_change_form</strong></a>(self, request, context, add=False, change=False, form_url='', obj=None)</dt></dl>
 
 <dl><dt><a name="PostAdmin-render_delete_form"><strong>render_delete_form</strong></a>(self, request, context)</dt></dl>
 
@@ -928,14 +884,7 @@ for&nbsp;each&nbsp;of&nbsp;those&nbsp;actions.</span></dd></dl>
 key&nbsp;is&nbsp;used&nbsp;if&nbsp;no&nbsp;field&nbsp;is&nbsp;provided.&nbsp;Return&nbsp;``None``&nbsp;if&nbsp;no&nbsp;match&nbsp;is<br>
 found&nbsp;or&nbsp;the&nbsp;object_id&nbsp;fails&nbsp;validation.</span></dd></dl>
 
-<dl><dt><a name="TagAdmin-get_paginator"><strong>get_paginator</strong></a>(
-    self,
-    request,
-    queryset,
-    per_page,
-    orphans=0,
-    allow_empty_first_page=True
-)</dt></dl>
+<dl><dt><a name="TagAdmin-get_paginator"><strong>get_paginator</strong></a>(self, request, queryset, per_page, orphans=0, allow_empty_first_page=True)</dt></dl>
 
 <dl><dt><a name="TagAdmin-get_preserved_filters"><strong>get_preserved_filters</strong></a>(self, request)</dt><dd><span class="code">Return&nbsp;the&nbsp;preserved&nbsp;filters&nbsp;querystring.</span></dd></dl>
 
@@ -962,14 +911,7 @@ before&nbsp;the&nbsp;deletion.<br>
 &nbsp;<br>
 The&nbsp;default&nbsp;implementation&nbsp;creates&nbsp;admin&nbsp;LogEntry&nbsp;objects.</span></dd></dl>
 
-<dl><dt><a name="TagAdmin-message_user"><strong>message_user</strong></a>(
-    self,
-    request,
-    message,
-    level=20,
-    extra_tags='',
-    fail_silently=False
-)</dt><dd><span class="code">Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;user.&nbsp;The&nbsp;default&nbsp;implementation<br>
+<dl><dt><a name="TagAdmin-message_user"><strong>message_user</strong></a>(self, request, message, level=20, extra_tags='', fail_silently=False)</dt><dd><span class="code">Send&nbsp;a&nbsp;message&nbsp;to&nbsp;the&nbsp;user.&nbsp;The&nbsp;default&nbsp;implementation<br>
 posts&nbsp;a&nbsp;message&nbsp;using&nbsp;the&nbsp;django.contrib.messages&nbsp;backend.<br>
 &nbsp;<br>
 Exposes&nbsp;almost&nbsp;the&nbsp;same&nbsp;API&nbsp;as&nbsp;messages.add_message(),&nbsp;but&nbsp;accepts&nbsp;the<br>
@@ -977,15 +919,7 @@ positional&nbsp;arguments&nbsp;in&nbsp;a&nbsp;different&nbsp;order&nbsp;to&nbsp;
 compatibility.&nbsp;For&nbsp;convenience,&nbsp;it&nbsp;accepts&nbsp;the&nbsp;`level`&nbsp;argument&nbsp;as<br>
 a&nbsp;string&nbsp;rather&nbsp;than&nbsp;the&nbsp;usual&nbsp;level&nbsp;number.</span></dd></dl>
 
-<dl><dt><a name="TagAdmin-render_change_form"><strong>render_change_form</strong></a>(
-    self,
-    request,
-    context,
-    add=False,
-    change=False,
-    form_url='',
-    obj=None
-)</dt></dl>
+<dl><dt><a name="TagAdmin-render_change_form"><strong>render_change_form</strong></a>(self, request, context, add=False, change=False, form_url='', obj=None)</dt></dl>
 
 <dl><dt><a name="TagAdmin-render_delete_form"><strong>render_delete_form</strong></a>(self, request, context)</dt></dl>
 
