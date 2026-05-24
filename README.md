@@ -15,8 +15,8 @@ Aplicació web de blog que permet visualitzar posts, autors i etiquetes. Inclou 
 
 ```bash
 # 1. Clona el repositori
-git clone <URL_DEL_REPOSITORI>
-cd <NOM_DEL_REPO>
+git clone https://github.com/Poltiger/B5_django_PolCulleres.git
+cd B5_django_PolCulleres
 
 # 2. Crea i activa un entorn virtual
 python -m venv venv
