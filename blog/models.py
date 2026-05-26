@@ -12,7 +12,10 @@ class Author(models.Model):
     def __str__(self):
         """Retorna el nom complet de l'autor."""
         return f"{self.first_name} {self.last_name}"
-
+    
+    def post_count(self):
+        """Retorna el nombre de posts que ha creat l'autor"""
+        return self.posts.count()
 
 class Tag(models.Model):
     """Etiqueta per classificar posts."""
